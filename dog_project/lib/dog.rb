@@ -24,11 +24,7 @@ class Dog
     end
 
     def bark
-        if self.age <= 3
-            @bark.downcase
-        else
-            @bark.upcase
-        end
+        self.age <= 3 ? @bark.downcase : @bark.upcase
     end
 
     def favorite_foods
@@ -41,3 +37,9 @@ class Dog
 end
 
 # leela = Dog.new("Leela","Lhasa Apso",14,"Woof",["sausage","cAke"])
+# teeta = Dog.new("Teeta","Jack Russel",2,"Woooooof",["egg","caKE"])
+
+# p leela.bark
+# p teeta.bark
+# p leela.favorite_food?("bacon")
+# p teeta.favorite_food?("CAKE")

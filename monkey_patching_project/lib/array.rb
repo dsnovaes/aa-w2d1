@@ -56,6 +56,7 @@ class Array
                 
         end
         uniques
+        # hash.keys <= works better
     end
 
     def my_transpose
@@ -85,4 +86,4 @@ end
 
 # p ["a", "b", "a", "b", "b", "c"].index("a")
 
-p ["a", "b", "a", "a", "b"].my_uniq
+# p ["a", "b", "a", "a", "b"].my_uniq
